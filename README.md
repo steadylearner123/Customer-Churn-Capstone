@@ -23,6 +23,15 @@ This project explores churn patterns, revenue impact, and retention strategies.
 
 ---
 
+## 📈 Sample Visualization
+Here’s an example churn analysis chart (you can replace this with your own image):
+
+![Churn Analysis Visualization](reports/churn_chart.png)
+
+*(To display your chart: save it as `churn_chart.png` in the `/reports` folder and push it to GitHub.)*
+
+---
+
 ## 🚀 How to Use
 1. Clone this repo  
 2. Open the notebook (`/notebooks/churn_analysis.ipynb`)  
