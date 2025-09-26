@@ -1,36 +1,35 @@
-# Customer Churn & Retention Analysis 📊
+# Customer Churn Capstone Project
 
-## 📌 Business Case
-Analyze customer behavior to predict churn and recommend strategies to improve retention.
-This project ties SQL, Python, and dashboarding into one workflow.
+## 📌 Project Description
+Analyzing telecom customer churn using **SQL** and **Python (Colab)**.  
+This project explores churn patterns, revenue impact, and retention strategies.
 
-## 🛠 Tech Stack
-- SQL (MySQL / MySQL HeatWave)
-- Python (Pandas, Scikit-Learn, Matplotlib, Seaborn)
-- Oracle Analytics Cloud or Power BI / Google Data Studio
-- GitHub for portfolio
+---
 
 ## 📂 Project Structure
-- `sql/`         → SQL queries for churn analysis  
-- `notebooks/`   → Python notebooks for EDA + ML  
-- `dashboard/`   → Dashboard screenshots  
-- `report/`      → PDF summary or AI-generated insights
+/notebooks → analysis code (Jupyter/Colab notebook)
+/sql → churn-related SQL queries
+/reports → final PDF analysis report
+/dashboard → (future use: Tableau/PowerBI dashboards)
 
-## 📊 Deliverables
-- SQL queries
-- Python Notebook
-- Dashboard screenshots
-- AI Insights Report
+---
 
-## 🔑 Author
-- Chyril Lou T. Caiña
-- cainachyril@gmail.com
+## 📊 Key Insights
+- Overall churn rate: **26.54%**
+- Churn is highest in **month-to-month contracts** and **first 12 months of tenure**.
+- **Electronic check** users have much higher churn.
+- **Fiber optic internet** customers churn more than DSL or no internet.
+- Churn has a **large revenue impact** (~$139k monthly loss).
 
-# Customer-Churn-Capstone
-End-to-end project: SQL + Python + Oracle Analytics Cloud for customer churn prediction and retention strategy.
+---
 
-## Acknowledgment
-This project was completed as part of my learning journey. 
-I carried out the analysis and documentation, but I also received guidance 
-from ChatGPT (OpenAI) to understand the concepts, write code, and interpret results. 
-Any errors are my own.
+## 🚀 How to Use
+1. Clone this repo  
+2. Open the notebook (`/notebooks/churn_analysis.ipynb`)  
+3. Review insights or run your own analysis  
+
+---
+
+## 🙏 Acknowledgments
+This project was completed with guidance and tutoring from **ChatGPT** for learning purposes.  
+I followed instructions step by step and built my **first data analytics project** this way.
