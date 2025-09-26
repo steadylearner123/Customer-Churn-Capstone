@@ -28,6 +28,9 @@ This project explores churn patterns, revenue impact, and retention strategies.
 Churn Rate by Contract Type:  
 ![Churn by Contract Type](charts/churn_by_contract_type.png)
 
+## 📄 Full Analysis Report
+[Download the Churn Analysis PDF](reports/churn_analysis.pdf)
+
 ---
 
 ## 🚀 How to Use
