@@ -6,18 +6,11 @@
 - Charts are stored in the `charts/` folder.
 - SQL notes are stored in the `sql/` folder for reference.
 
-## Key Insights
-- Overall churn rate: 26.54%
-- Highest churn: Month-to-month contracts, first 12 months tenure
-- Electronic check users have the highest churn
-- Fiber optic customers churn more than DSL or no internet
-- Revenue impact: ~$139k monthly lost revenue
-
 
 ## 📌 Project Description
 Analyzing telecom customer churn using **SQL** and **Python (Colab)**.  
 This project explores churn patterns, revenue impact, and retention strategies.
-
+For an in depth explanation please open the Project Summary.docx file.
 ---
 
 ## 📂 Project Structure
