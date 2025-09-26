@@ -1,0 +1,54 @@
+-- Count total customers
+SELECT COUNT(*) AS total_customers
+FROM customers;
+
+-- Count churned vs active customers
+SELECT churn, COUNT(*) AS count
+FROM customers
+GROUP BY churn;
+
+-- Churn rate by contract type
+SELECT contract_type, 
+       COUNT(*) AS total, 
+       SUM(CASE WHEN churn = 'Yes' THEN 1 ELSE 0 END) AS churned,
+       ROUND(SUM(CASE WHEN churn = 'Yes' THEN 1 ELSE 0 END) * 100.0 / COUNT(*), 2) AS churn_rate_percent
+FROM customers
+GROUP BY contract_type;
+
+-- Average monthly charges for churned vs retained
+SELECT churn, 
+       ROUND(AVG(monthly_charges), 2) AS avg_monthly_charges
+FROM customers
+GROUP BY churn;
+
+-- Churn by payment method
+SELECT payment_method, 
+       COUNT(*) AS total, 
+       SUM(CASE WHEN churn = 'Yes' THEN 1 ELSE 0 END) AS churned
+FROM customers
+GROUP BY payment_method;
+
+-- Revenue impact: total monthly charges lost to churn
+SELECT SUM(monthly_charges) AS lost_revenue
+FROM customers
+WHERE churn = 'Yes';
+
+-- Churn by region
+SELECT region, 
+       COUNT(*) AS total, 
+       SUM(CASE WHEN churn = 'Yes' THEN 1 ELSE 0 END) AS churned
+FROM customers
+GROUP BY region;
+
+-- Churn by tenure (grouped by ranges)
+SELECT CASE 
+         WHEN tenure < 12 THEN '0-12 months'
+         WHEN tenure BETWEEN 12 AND 24 THEN '1-2 years'
+         WHEN tenure BETWEEN 25 AND 48 THEN '2-4 years'
+         ELSE '4+ years'
+       END AS tenure_group,
+       COUNT(*) AS total,
+       SUM(CASE WHEN churn = 'Yes' THEN 1 ELSE 0 END) AS churned
+FROM customers
+GROUP BY tenure_group
+ORDER BY tenure_group;
