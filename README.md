@@ -1,5 +1,19 @@
 # Customer Churn Capstone Project
 
+## How to View
+- Open `reports/churn_analysis.pdf` for the final analysis report.
+- Open `notebooks/churn_analysis.ipynb` in Jupyter Notebook or Google Colab to see the code and run analyses.
+- Charts are stored in the `charts/` folder.
+- SQL notes are stored in the `sql/` folder for reference.
+
+## Key Insights
+- Overall churn rate: 26.54%
+- Highest churn: Month-to-month contracts, first 12 months tenure
+- Electronic check users have the highest churn
+- Fiber optic customers churn more than DSL or no internet
+- Revenue impact: ~$139k monthly lost revenue
+
+
 ## 📌 Project Description
 Analyzing telecom customer churn using **SQL** and **Python (Colab)**.  
 This project explores churn patterns, revenue impact, and retention strategies.
@@ -41,6 +55,8 @@ Churn Rate by Contract Type:
    - Click the file in GitHub
    - Click **Raw**
    - Right-click → **Save As…** to download a local copy
+
+
 
 ---
 
