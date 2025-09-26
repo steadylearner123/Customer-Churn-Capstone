@@ -37,6 +37,10 @@ Churn Rate by Contract Type:
 1. Clone this repo  
 2. Open the notebook (`/notebooks/churn_analysis.ipynb`)  
 3. Review insights or run your own analysis  
+4. To download the PDF report (`/reports/churn_analysis.pdf`):
+   - Click the file in GitHub
+   - Click **Raw**
+   - Right-click → **Save As…** to download a local copy
 
 ---
 
